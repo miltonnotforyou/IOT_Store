@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOT STORE - Tecnologia de Ponta</title>
+
+    <meta name="author" content="Milton Silva">
+
+    <!-- FontAwesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Arquivo de Estilos CSS -->
+    <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+    
+    <div class="site-container">
+         <!-- Cabeçalho-->
+      <header>
+        <div class="caixa-conteudo cabecalho-conteudo">
+          <!-- Logotipo com imagem -->
+          <a href="/" class="logotipo">
+            <img src="./logo/logotipo_dark.png" alt="IOT STORE Logo" class="logotipo-img">
+          </a>
+
+          <!-- Barra de pesquisa de produtos -->
+          <div class="barra-pesquisa">
+            <i class="fa-solid fa-magnifying-glass icone-pesquisa"></i>
+            <input type="text" placeholder="Pesquisar dispositivos inteligentes..." />
+          </div>
+
+          <!-- Ações do usuário (perfil, favoritos, carrinho) -->
+          <div class="cabecalho-acoes">
+            <button class="botao-icone">
+              <i class="fa-regular fa-user"></i>
+            </button>
+            <button class="botao-icone">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <button class="botao-carrinho">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="contador-carrinho">10</span>
+            </button>
+          </div>
+        </div>
+      </header>
+        <!-- Fim do Cabeçalho -->
+      
+      <main>
+        <!-- catalogo container -->
+  <div class="catalogo-container caixa-conteudo">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-conteudo">
+
+        <div class="filtro-section">
+          <h3>Categorias</h3>
+          <div class="filtro-grid">
+            <label class="filtro-item">
+              <input type="checkbox" checked>
+              <span>Segurança</span>
+            </label>
+            <label class="filtro-item">
+              <input type="checkbox">
+              <span>Iluminação</span>
+            </label>
+            <label class="filtro-item">
+              <input type="checkbox">
+              <span>Conectividade</span>
+            </label>
+            <label class="filtro-item">
+              <input type="checkbox">
+              <span>Energia</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="filtro-section"> 
+          <h3>Faixa de Preço</h3>
+          <input class="preco-slider" type="range" min="0" max="5000"> <!-- filtro de faixa de preço do sidebar -->          
+          <div class="preco-labels">
+            <span>R$ 0</span>
+            <span>R$ 5.000</span>
+          </div>
+        </div>
+
+        <div class="filtro-section">
+          <h3>Marcas</h3>
+          <div class="filtro-grid">
+            <label class="filtro-item">
+              <input type="radio" name="marca">
+              <span>SmartLife</span>
+            </label>
+            <label class="filtro-item">
+              <input type="radio" name="marca">
+              <span>Tuya</span>
+            </label>
+            <label class="filtro-item">
+              <input type="radio" name="marca">
+              <span>Sonoff</span>
+            </label>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+    <!-- Fim do SIDEBAR -->
+
+    <!-- ÁREA DE PRODUTOS -->
+    <div class="area-produtos">
+
+      <!-- Barra de ferramentas -->
+      <div class="barra-ferramentas">
+        <p>Exibindo <span>8</span> de 48 produtos</p>
+        <div class="organizar-container">
+          <label class="organizar-label">Ordenar por:</label>
+          <select class="organizar-select">
+            <option>Mais relevantes</option>
+            <option>Menor preço</option>
+            <option>Maior preço</option>
+            <option>Novidades</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Cabeçalho da seção -->
+      <div class="cabecalho-secao">
+        <div class="titulo-secao">
+          <h1>Dispositivos Inteligentes</h1>
+          <p>Transforme seu ambiente com o que há de mais avançado em conectividade e automação residencial</p>
+        </div>
+        <nav class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span class="separador">/</span>
+          <span class="atual">Produtos</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </nav>
+      </div>
+
+      <!-- Grade de produtos -->
+      <div class="grade-produtos">
+        <!-- Produto 1 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <a href="raspberry.html"><img src="./Produtos/raspberry1.png" alt="Raspberry Pi 4"/></a>
+            <span class="selo">Mais Vendido</span>
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(1005)</span>
+          </div>
+          <h4 class="nome-produto">Raspberry Pi 4</h4>
+          <p class="descricao-produto">8GB RAM - Versão Oficial. Processador quad-core de alto desempenho 64-bit.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 649,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <a href="camera.html"><img src="./Produtos/camera_segurança.jpg" alt="Câmera inteligente"/></a>
+            
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>(105)</span>
+          </div>
+          <h4 class="nome-produto">Câmera Smart Wi-fi</h4>
+          <p class="descricao-produto">Inteligente. Segura. Simples. Câmera com movimento de rotação, inclinação e funções avançadas.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 249,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <a href="google.html"><img src="./Produtos/smart-speaker.jpg" alt="Smart Speaker"/></a>
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(105)</span>
+          </div>
+          <h4 class="nome-produto">Smart Speaker Google Nest</h4>
+          <p class="descricao-produto">Transforme sua casa em uma casa inteligente. Ele é o companheiro perfeito para organizar seu dia a dia.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 449,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 4 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <a href="termostato.html"><img src="./Produtos/termostato.png" alt="Termostato Smart"/></a>            
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>(10)</span>
+          </div>
+          <h4 class="nome-produto">Termostato Smart</h4>
+          <p class="descricao-produto">Tenha controle preciso e moderno da temperatura em sistemas de climatização e refrigeração.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 649,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <img src="./Produtos/robo_aspirador.jpg" alt="Robô aspirador"/>
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(745)</span>
+          </div>
+          <h4 class="nome-produto">Robô Aspirador de Pó</h4>
+          <p class="descricao-produto">Conta com função 3 em 1: varre, aspira e passa pano ao mesmo tempo.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 795,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <img src="./Produtos/fumaça.jpg" alt="Sensor de Fumaça Wi-Fi"/>
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>(67)</span>
+          </div>
+          <h4 class="nome-produto">Sensor de Fumaça Wi-Fi</h4>
+          <p class="descricao-produto">Alertas em tempo real no seu smartphone. Segurança 24h para sua família.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 179,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 7 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <img src="./Produtos/lamapa_smart.jpg" alt="Lâmpada LED Smart RGBW"/>
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <span>(245)</span>
+          </div>
+          <h4 class="nome-produto">Lâmpada LED Smart RGBW</h4>
+          <p class="descricao-produto">16 milhões de cores. Controle por voz compatível com Alexa e Google Home.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 89,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Produto 8 -->
+        <div class="cartao-produto">
+          <div class="imagem-produto">
+            <img src="./Produtos/zigbe_hub.jpg" alt="Smart Hub Gateway Zigbee"/>
+          </div>
+          <div class="classificação">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span>(89)</span>
+          </div>
+          <h4 class="nome-produto">Smart Hub Gateway Zigbee</h4>
+          <p class="descricao-produto">O cérebro da sua casa inteligente. Conecte até 50 dispositivos simultaneamente.</p>
+          <div class="rodape-produto">
+            <span class="preco-produto">R$ 289,00</span>
+            <button class="botao-adicionar-carrinho">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <!-- fim .grade-produtos -->
+
+    </div>
+    <!-- fim area produtos -->
+
+  </div>
+  <!-- fim catalogo container -->
+
+      </main>
+     
+     <!-- Rodapé do site -->
+      <footer>
+        <div class="caixa-conteudo">
+          <div class="grade-rodape">
+            <!-- Informações da marca e redes sociais -->
+            <div class="informacao-rodape">
+              <a href="/" class="logotipo-rodape">
+                <div class="logotipo-rodape-icone">
+                 <img src="./logo/logotipo_light.png" alt="IOT STORE Logo" class="logotipo-img"> 
+                </div>
+                <h2 class="logotipo-texto">IOT STORE</h2>
+              </a>
+              <p class="descricao-rodape">Sua parceira premium em automação e tecnologia inteligente para casa e negócios.</p>
+              <div class="links-sociais">
+                <a href="https://www.linkedin.com/in/milton-nascimento-alves-da-silva/" target="_blank" class="botao-social"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100013903541113" target="_blank" class="botao-social"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mnsilvanavegantes/" target="_blank" class="botao-social"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="botao-social"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+            </div>
+
+            <!-- Colunas de links institucionais -->
+            <div class="coluna-rodape">
+              <h4>Institucional</h4>
+              <ul>
+                <li><a href="#">Sobre Nós</a></li>
+                <li><a href="#">Minha Conta</a></li>
+                <li><a href="#">Trabalhe Conosco</a></li>
+                <li><a href="#">Blog Tech</a></li>
+              </ul>
+            </div>
+
+            <div class="coluna-rodape">
+              <h4>Informações</h4>
+              <ul>
+                <li><a href="#">Política de Entrega</a></li>
+                <li><a href="#">Privacidade e Segurança</a></li>
+                <li><a href="#">Trocas e Devoluções</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+
+            <!-- Informações de contato -->
+            <div class="coluna-rodape">
+              <h4>Contato</h4>
+              <ul class="lista-contato">
+                <li><i class="fa-solid fa-phone"></i> (19) 4002-8922</li>
+                <li><i class="fa-solid fa-envelope"></i> contato@iotstore.com.br</li>
+                <li><i class="fa-regular fa-clock"></i> Seg - Sex: 09h às 18h</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Parte inferior do rodapé com selos e direitos autorais -->
+          <div class="rodape-inferior">
+            <div class="item-rodape-inferior">
+              <span>Pagamento</span>
+              <div class="icones-pagamento">
+                <a href="https://www.visa.com.br" target="_blank" class="botao-social"><i class="fa-brands fa-cc-visa"></i></a>
+                <a href="https://www.mastercard.com" target="_blank" class="botao-social"><i class="fa-brands fa-cc-mastercard"></i></a>
+                <a href="https://www.bcb.gov.br/estabilidadefinanceira/pix" target="_blank" class="botao-social"><i class="fa-brands fa-pix"></i></a>
+                
+              </div>
+            </div>
+            <div class="item-rodape-inferior">
+              <span>Segurança</span>
+              <div class="icones-seguranca">
+                <i class="fa-solid fa-shield-halved" style="color: #10b981;"></i>
+                <i class="fa-solid fa-circle-check" style="color: #3b82f6;"></i>
+              </div>
+            </div>
+            <p class="direitos-autorais">&copy; 2026 IOT STORE. Todos os direitos reservados.</p>
+            <p class="direitos-autorais">Desenvolvido por <a href="https://github.com/miltonnotforyou" target="_blank">Milton Silva
+            <i class="fa-brands fa-github"></i></a></p>
+          </div>
+        </div>
+      </footer>
+      <!-- Fim Rodapé do site -->
+
+    </div>
+    
+</body>
+</html>
